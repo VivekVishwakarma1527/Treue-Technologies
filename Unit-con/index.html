@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Unit Conversion</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Length Converter</h2>
+      <div class="calculate-field">
+        <div class="wrap">
+          <input type="number" id="in_val" min="0" placeholder="input Length" />
+          <select id="in_unit">
+            <option selected value="Millimeter">Millimeter</option>
+            <option value="Centimeter">Centimeter</option>
+            <option value="Meter">Meter</option>
+            <option value="Kilometer">Kilometer</option>
+          </select>
+        </div>
+        <div><h2>=</h2></div>
+        <div class="wrap">
+          <input
+            type="number"
+            id="out_val"
+            min="0"
+            placeholder="output Length" />
+          <select id="out_unit">
+            <option value="Millimeter">Millimeter</option>
+            <option selected value="Centimeter">Centimeter</option>
+            <option value="Meter">Meter</option>
+            <option value="Kilometer">Kilometer</option>
+          </select>
+        </div>
+      </div>
+      <div class="input_button">
+        <button class="btn" id="btn_calculate" onclick="calculate()">
+          Calculate
+        </button>
+      </div>
+      <div id="OutputResult" class="result-box">
+        <h3>Result</h3>
+        <p id="showResult"></p>
+      </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="formula.js"></script>
+  </body>
+</html>

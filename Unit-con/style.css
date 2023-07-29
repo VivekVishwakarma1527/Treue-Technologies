@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #e2e2e2;
+}
+h2{
+    font-size: 35px;
+    font-weight: 500;
+}
+.container{
+    display: flex;
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    translate: -50% -80%;
+    top: 50%;
+    left: 50%;
+}
+.calculate-field{
+    display: flex;
+    align-items: center;
+    background: rgb(154, 197, 163);
+    width: 93%;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;    
+    gap: 10px ;
+    position: relative;
+    padding: 10px 5px;
+}
+.wrap input, select{
+    border: none;
+    outline: none;
+    padding: 3px;
+    text-align: center;
+}
+.input_button{
+    background: rgb(154, 197, 163);
+    margin: 10px 0 0 10px;
+    padding: 8px 85px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.btn{
+    margin: 5px 20px 5px 20px;
+    padding: 5px;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}   
+#btn_calculate{
+    background: rgb(96, 201, 21);
+    transition: 0.3s;
+    border-radius: 5px;
+}
+#btn_calculate:hover{
+    background: rgb(96, 201, 21, 0.5);
+    transform: scaleX(1.1);
+}
+.result-box{
+    padding: 10px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    background: rgb(154, 197, 163);
+    height: 50px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.result-box p{
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
